@@ -1,0 +1,14 @@
+D:\Hackathon\RaffelApp\bin\Debug\net7.0\RaffelApp.exe
+D:\Hackathon\RaffelApp\bin\Debug\net7.0\RaffelApp.deps.json
+D:\Hackathon\RaffelApp\bin\Debug\net7.0\RaffelApp.runtimeconfig.json
+D:\Hackathon\RaffelApp\bin\Debug\net7.0\RaffelApp.dll
+D:\Hackathon\RaffelApp\bin\Debug\net7.0\RaffelApp.pdb
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\RaffelApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\RaffelApp.AssemblyInfoInputs.cache
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\RaffelApp.AssemblyInfo.cs
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\RaffelApp.csproj.CoreCompileInputs.cache
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\RaffelApp.dll
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\refint\RaffelApp.dll
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\RaffelApp.pdb
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\RaffelApp.genruntimeconfig.cache
+D:\Hackathon\RaffelApp\obj\Debug\net7.0\ref\RaffelApp.dll
