@@ -3,7 +3,7 @@ using RaffelApp;
 using System.Runtime.CompilerServices;
 
 Raffle raffle = new Raffle();
-raffle.DispalyRaffelInstructions();
+raffle.DispalyRaffelInstructions(RaffleStatus.NotStarted);
 Console.WriteLine("Please enter your preference");
 string enteredOptionString = Console.ReadLine();
 int enteredOption = 0;
@@ -11,21 +11,35 @@ int drawId = 1;
 decimal potsize = 100;
 do
 {
-
-    if (!int.TryParse(enteredOptionString, out enteredOption))
+    try
     {
-        Console.WriteLine("Enter valid option");
-    }
-    else
-    {
-        switch (enteredOption)
-        { 
-            case 1:
-                raffle.StartDraw(drawId, potsize);
-                Console.ReadLine();
-                break;
-
+        if (!int.TryParse(enteredOptionString, out enteredOption))
+        {
+            Console.WriteLine("Enter valid option");
+            enteredOptionString = Console.ReadLine();
         }
+        else
+        {
+            switch (enteredOption)
+            {
+                case 1:
+                    raffle.StartDraw(drawId, potsize);
+                    Console.ReadLine();
+                    raffle.DispalyRaffelInstructions(RaffleStatus.DrawStarted);
+                    Console.ReadLine();
+                    break;
+                case 2:
+                    raffle.BuyTickets();
+                    break;
+
+
+            }
+        }
+        enteredOptionString = Console.ReadLine();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
     }
 } while (enteredOption != -99);
 

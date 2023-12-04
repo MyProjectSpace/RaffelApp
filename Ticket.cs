@@ -8,11 +8,11 @@ namespace RaffelApp
 {
     public class Ticket
     {
-        private List<int> TicketNumberList;
+        public List<int> TicketNumberList { get; private set; } = new List<int>();
 
         public Ticket()
         {
-            TicketNumberList = new List<int>();
+            TicketNumberList = GetTicketNumbers();
         }
 
         public List<int> GetTicketNumbers()
@@ -27,9 +27,7 @@ namespace RaffelApp
                     TicketNumberList.Add(randomNumber);
                     noCount++;
                 }
-
             }
-
             return TicketNumberList;
         }
 
@@ -37,7 +35,7 @@ namespace RaffelApp
         {
             foreach (int no in TicketNumberList)
             {
-                Console.Write($"{no} /t");
+                Console.Write($"{no} ");
             }
         }
     }

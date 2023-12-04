@@ -8,8 +8,8 @@ namespace RaffelApp
 {
     public enum RaffleStatus
     {
-        
+        NotStarted,
         DrawStarted,
-
+        OnGoing,
     }
 }
