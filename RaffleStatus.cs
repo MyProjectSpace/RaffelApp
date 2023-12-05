@@ -11,5 +11,6 @@ namespace RaffelApp
         NotStarted,
         DrawStarted,
         OnGoing,
+        RunningRaffle
     }
 }

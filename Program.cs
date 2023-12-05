@@ -26,16 +26,23 @@ do
                     raffle.StartDraw(drawId, potsize);
                     Console.ReadLine();
                     raffle.DispalyRaffelInstructions(RaffleStatus.DrawStarted);
-                    Console.ReadLine();
                     break;
                 case 2:
                     raffle.BuyTickets();
+                    raffle.DispalyRaffelInstructions(RaffleStatus.OnGoing);
+                    break;
+                case 3:
+                    raffle.RunRaffle();
+                    raffle.DispalyRaffelInstructions(RaffleStatus.RunningRaffle);
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice. Please enter a number between 1 and 3.");
                     break;
 
-
             }
+            enteredOptionString = Console.ReadLine();
         }
-        enteredOptionString = Console.ReadLine();
+        
     }
     catch (Exception ex)
     {

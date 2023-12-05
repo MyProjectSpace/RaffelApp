@@ -33,10 +33,11 @@ namespace RaffelApp
 
         public void ShowTicketNumbers()
         {
-            foreach (int no in TicketNumberList)
-            {
-                Console.Write($"{no} ");
-            }
+            //foreach (int no in TicketNumberList)
+            //{
+            //    Console.Write($"{no} ");
+            //}
+            Console.WriteLine(string.Join(" ", TicketNumberList));
         }
     }
 }
